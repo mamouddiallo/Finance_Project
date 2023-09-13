@@ -1,0 +1,516 @@
+
+body{
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+    /* background-color: aquamarine; */
+}
+
+.navbar{
+    width: 100%;
+    background-color: green;
+    height: 70px;
+    display: flex;
+    /* flex-direction: row;
+    justify-content: space-between; */
+    margin-bottom: -30px;
+}
+.navb{
+    /* background-color: red; */
+    width: 10%;
+    height: 100%;
+}
+.navb1{
+    /* background-color:yellow; */
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+
+
+ul li a {
+    color: antiquewhite;
+    text-decoration: none;
+   
+}
+.burger{
+    display: none;
+}
+
+.logo{
+    width: 50%;
+    padding-left: 100px;
+}
+.liste{
+    width: 50%;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between; */
+    /* background-color: orange; */
+    padding-right: 150px;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transform: translateY(10px);
+    color: white;
+
+}
+ li{
+    text-decoration: none;
+    list-style: none;
+} 
+a{
+    color: white;
+}
+
+.navb2{
+    /* background-color:blue; */
+    width: 10%;
+    height: 100%;
+}
+
+.picture{
+    width: 100%;
+    height: 700px;
+    margin: auto;
+    background-image: url("./image/istockphoto-1280853878-612x612.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.iconemobile{
+    display: none;
+}
+
+.ecriture h1{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 1000;
+    color: white;
+   
+}
+
+.boutons{
+    margin-left: 500px;
+    margin-top: 300px;
+}
+.btns{
+    width: 160px;
+    height: 44px;
+    border-radius: 50px;
+}
+/* la partie des icones */
+.icones{
+    width: 80%;
+    height: 200px;
+    /* background-color: brown; */
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.finance{
+    width: 25%;
+    height: 180px;
+    /* background-color: red; */
+    /* border: 2px solid black; */
+}
+.titre{
+    text-align: center;
+    font-weight: 400;
+}
+.finance1{
+    width: 25%;
+    height: 180px;
+    /* background-color: black; */
+}
+.finance2{
+    width: 25%;
+    height: 180px;
+    background-color: white;
+}
+
+/* la partie des icones */
+
+.image_text{
+    width: 80%;
+    height: 300px;
+    background-color: #D4EFC1;
+    border: 3px solid #26D94D;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.equipe{
+    width: 45%;
+    height: 280px;
+    /* background-color: yellow; */
+}
+.equipe1 p{
+    font-weight: bold;
+}
+.laphoto{
+    width: 80%;
+    height: 230px;
+    margin: auto;
+    border: 5px solid white;
+    margin-top: 20px;
+}
+.equipe1{
+    width: 30%;
+    height: 280px;
+    border: 2px solid black;
+}
+/* fin de la partie de notre equipe avec la description */
+
+/* DEBUT DE LA PARTIE COMMENTAIRE */
+.opinions{
+    width: 80%;
+    height: 270px;
+    /* background-color: bisque; */
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.commentaire1{
+    width: 45%;
+    height: 260px;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+
+}
+.citation{
+    width: 100%;
+    height: 60px;
+    /* background-color: #26D94D; */
+}
+.coment{
+    width: 100%;
+    height: 150px;
+    /* background-color: red; */
+}
+.nom_photo{
+    width: 100%;
+    height: 60px;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nom{
+    width: 65%;
+    height: 30px;
+    /* background-color: blueviolet; */
+}
+.photo{
+    width: 30%;
+    height: 60px;
+    /* background-color: brown; */
+}
+
+.commentaire2{
+    width: 45%;
+    height: 260px;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+}
+/* FIN DE LA PARTIE COMMENTAIRE */
+
+.footer{
+    width: 80%;
+    height: 200px;
+    margin: auto;
+    background-color: #26D94D;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.infos1{
+    width: 5%;
+    height: 180px;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.infos2{
+    width: 3%;
+    height: 180px;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+}
+.infos3{
+    width: 3%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10px;
+}
+.infos4{
+    width: 30%;
+    height: 190px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* margin-right: 190px; */
+
+}
+.infos11{
+    width: 100%;
+    height: 50px;
+    /* background: yellow; */
+}
+.infos12{
+    width: 100%;
+    height: 50px;
+    /* background: green; */
+}
+.infos13{
+    width: 100%;
+    height: 50px;
+    /* background: red; */
+}
+.telmaildomicil{
+    width: 40%;
+    height: 100px;
+    /* background-color: aqua;  */
+}
+.infos2{
+    width: 20%;
+    height: 180px;
+    /* border: 2px solid black; */
+}
+.infos3{
+    width: 20%;
+    height: 180px;
+    /* border: 2px solid black; */
+    border-left: 5px solid green;
+}
+/* ##################### MEDIA DE [300PX 768PX] */
+
+@media (min-width:300px ) and (max-width:768px){
+    .navbar{
+        width: 100%;
+        background-color: green;
+        height: 70px;
+        display: flex;
+        /* flex-direction: row;
+        justify-content: space-between; */
+    }
+    .logo{
+        width: 50%;
+        margin-left: -700px;
+        /* padding-left: 100px; */
+    }
+    .liste{
+        display: none;
+    }
+    .burger{
+        width: 50px;
+        display: block;
+        height: 30px;
+        background-color: green;
+        position: relative;
+        margin: 300px;
+        margin-top: 20px;
+    }
+    .burger input{
+        display: none;
+    }
+    .burger.responsive{
+        display: flex;
+        flex-direction:column ;
+    }
+    #myid:checked ~ .responsive{
+       visibility: visible; 
+         
+    }
+    .responsive{
+        background-color: green;
+        opacity: 1;
+        visibility: hidden;
+        position: fixed;
+        height: 150px; 
+        border-radius: 20px;
+        width: 30%;
+        border: 2px solid black;
+       
+    } 
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    ul li {
+        margin-top: 10px;
+    }
+    
+    .picture{
+        width: 100%;
+        height: 300px;
+        margin: auto;
+        background: url("./image/istockphoto-1280853878-612x612.jpg") 50% no-repeat;
+        background-size: cover;
+    
+    }
+    .ecriture h1{
+        text-align: center;
+        font-size: xx-large;
+        font-weight: 50;
+        color: white;
+        
+    
+    }
+    
+    .icones{
+        width: 80%;
+        height: 600px;
+        /* background-color: brown; */
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .boutons{
+       margin-left: 10%;
+       margin-top: 15%;
+    }
+    .btns{
+        width: 160px;
+        height: 44px;
+        border-radius: 50px;
+    }
+    .finance img{
+        width: 25%;
+        height: 60%;
+        /* background-color: red; */
+        /* border: 2px solid black; */
+        margin-left: 200px;
+        margin-top: 0px;
+
+    }
+    .finance h1{
+        /* background-color: red; */
+        /* border: 2px solid black; */
+        margin-left: 200px;
+        margin-top: 00px;
+
+    }
+    .titre h1{
+        text-align: center;
+        font-weight: 400;
+    }
+    .finance1 img{
+        width: 25%;
+        height: 60%;
+        margin-left: 100px;
+    }
+    .finance2{
+        width: 25%;
+        height: 180px;
+        background-color: white;
+        margin-left: 50px;
+    }
+
+    /* FOOTER */
+
+    .footer{
+        width: 100%;
+        height: 200px;
+        margin: auto;
+        background-color: #26D94D;
+        display: none;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .infos1{
+        width: 5%;
+        height: 180px;
+        /* border: 2px solid black; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .infos2{
+        width: 3%;
+        height: 180px;
+        /* border: 2px solid black; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 20px;
+    }
+    .infos3{
+        width: 3%;
+        height: 180px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 10px;
+    }
+    .infos4{
+        width: 30%;
+        height: 290px;
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 130px;
+    
+    }
+    .image_text{
+        display: none;
+    }
+    .infos11 img{
+        margin-left: O;
+    }
+    .infos11{
+        width: 100%;
+        height: 50px;
+        /* background: yellow; */
+    }
+    .infos12{
+        width: 100%;
+        height: 50px;
+        /* background: green; */
+    }
+    .infos13{
+        width: 100%;
+        height: 50px;
+        /* background: red; */
+    }
+    .telmaildomicil{
+        width: 40%;
+        height: 100px;
+        /* background-color: aqua;  */
+    }
+    .infos2{
+        width: 20%;
+        height: 180px;
+        /* border: 2px solid black; */
+    }
+    .infos3{
+        width: 20%;
+        height: 180px;
+        /* border: 2px solid black; */
+        border-left: 5px solid green;
+    }
+}
+
