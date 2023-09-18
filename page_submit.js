@@ -67,6 +67,7 @@ form.addEventListener('submit', function (e) {
 
     // Afficher un message de confirmation (facultatif)
     alert( "merci " + formData.name + " pour votre inscription");
+    window.location.href = "display.html"
     // ici je vais mettre un boutton pour le rediriger vers la  page de profile avec son profil
 
     // Rediriger ou effectuer d'autres actions si nécessaire
