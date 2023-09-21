@@ -5,6 +5,7 @@ body{
     box-sizing: border-box;
     /* background-color: aquamarine; */
     margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .navbar{
@@ -36,6 +37,8 @@ body{
 ul li a {
     color: antiquewhite;
     text-decoration: none;
+    margin-left: 5px;
+    list-style-type:  none;
 
 }
 .burger{
@@ -212,7 +215,6 @@ a{
     flex-direction: row;
     justify-content: space-between;
     background-color: #35A29F;
-    color: white;
     border-radius: 20px;
 }
 .commentaire1{
@@ -221,17 +223,21 @@ a{
     /* background-color: black; */
     display: flex;
     flex-direction: column;
+    box-shadow: 5px 15px 15px 3px rgba(0, 0, 0, 0.696);
     /* border: 2px solid black; */
+ 
 
 }
 .citation{
     width: 100%;
     height: 60px;
     /* background-color: #26D94D; */
+    
 }
 .coment{
     width: 100%;
     height: 150px;
+    
     /* background-color: red; */
 }
 .nom_photo{
@@ -259,18 +265,21 @@ a{
     /* background-color: blue; */
     display: flex;
     flex-direction: column;
+    box-shadow: 5px 15px 15px 3px rgba(0, 0, 0, 0.696);
     /* border: 2px solid black; */
 }
 /* FIN DE LA PARTIE COMMENTAIRE */
 .footer1{
+    margin-top: 10px;
     width: 100%;
     height: 300px;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     background-color: #071952;
     color: white;
     
 }
 .footer{
+    margin-top: 10px;
     width: 80%;
     height: 300px;
     margin: auto;

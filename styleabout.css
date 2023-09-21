@@ -8,18 +8,26 @@
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
 }
+.btn{
+  width: 100px;
+  margin-left: 50px;
+  height: 50px;
+}
 
 h1{
+  height: 100%;
   text-align: center;
 
 }
 .picture{
     width: 80%;
     height: 500px;
-    background-image: url("./image/krakenimages-376KN_ISplE-unsplash.jpg");
+    background: url("./image/krakenimages-376KN_ISplE-unsplash.jpg") 50% no-repeat;
     background-size: cover;
-    background-repeat: no-repeat;
     margin: auto;
+}
+.wedomob{
+  display: none;
 }
 .wedo{
   width: 80%;
@@ -112,4 +120,122 @@ h1{
 }
 .copyright h3{
   text-align: center;
+}
+
+@media (min-width:300px ) and (max-width:768px){
+  .aboutus{
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    background-color: #071952;
+    color: white;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.picture{
+  width: 80%;
+  height: 500px;
+  background: url("./image/krakenimages-376KN_ISplE-unsplash.jpg") 50% no-repeat;
+  background-size: cover;
+  margin: auto;
+}
+.wedo{
+  display: flex;
+  height: 600px;
+}
+
+.wedomob{
+  width: 80%;
+  height: 600px;
+  margin: auto;
+  background-color: #35A29F;
+  display: none;
+  flex-direction: row;
+  justify-content:center ;
+}
+.whate{
+  width: 20%;
+  height: 20px;
+  /* background-color: antiquewhite; */
+  margin: auto;
+}
+.alltext h1{
+  margin-top: -15px;
+}
+.what{
+  width:20% ;
+  height:70px;
+  /* background-color: aqua; */
+  margin: auto;
+}
+.text{
+  width:70% ;
+  height:500px;
+  background-color:  #071952;
+  margin: auto;
+  color: white;
+}
+.what img{
+  width: 100%;
+  height: 100%;
+}
+
+.footer{
+  width: 100%;
+  height: 200px;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #071952;
+  color: white;
+  
+
+}
+.moremoney{
+  width: 40%;
+  height: 70px;
+
+  margin: auto;
+
+}
+.socialmedia{
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+}
+.twit img{
+  width: 50%;
+  height: 40px;
+
+}
+.waa img{
+  width: 50%;
+  height: 40px;
+ 
+
+}
+.insta img{
+  width: 50%;
+  height: 40px;
+
+}
+.face img{
+  width: 40%;
+  height: 40px;
+}
+
+.copyright{
+  width: 80%;
+  height: 70px;
+  margin: auto;
+}
+.copyright h3{
+  text-align: center;
+}
+  
+
 }

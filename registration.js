@@ -30,11 +30,27 @@ document.addEventListener('DOMContentLoaded', function() {
             zipCode: zipCode
         };
 
-        // Converti l'objet en chaîne JSON
-        const formDataJSON = JSON.stringify(formData);
+        const globalData = localStorage.getItem("users")
+        let data = [];
+        let long = 0;
+        if (!globalData) {
+            formData.id = "user01"
+            data.push(formData);
+              // Converti l'objet en chaîne JSON
+            const formDataJSON = JSON.stringify(data);
+            localStorage.setItem("users",formDataJSON );
+        }else{
+            data = JSON.parse(globalData);
+            long = data.length < 9?"users0"+(data.length+1): "users"+(data.length+1)
+            formData.id  = long
+            console.log(formData);
+            data.push(formData);
+            console.log(data)
+            localStorage.setItem("users",JSON.stringify(data));
 
-        // Stock les données du formulaire dans le Local Storage sous la clé "formData"
-        localStorage.setItem('formData', formDataJSON);
+
+        }
+
 
         //  réinitialiser le formulaire ici si nécessaire
         form.reset();

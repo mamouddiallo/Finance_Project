@@ -18,14 +18,15 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // Récupérez les données d'inscription stockées dans le Local Storage
-        const storedFormDataJSON = localStorage.getItem('formData');
+        const storedFormDataJSON = localStorage.getItem('users');
 
         if (storedFormDataJSON) {
             // Convertissez les données JSON stockées en un objet JavaScript
             const storedFormData = JSON.parse(storedFormDataJSON);
-
+            let isUser=storedFormData.find(users=>users.email === loginEmail && users.password === loginPassword)
+            console.log(isUser)
             // Vérifiez si l'e-mail et le mot de passe correspondent aux données d'inscription
-            if (loginEmail === storedFormData.email && loginPassword === storedFormData.password) {
+            if (isUser) {
                 // Authentification réussie, vous pouvez rediriger l'utilisateur vers la page d'accueil ou une autre page sécurisée
                 alert('Login successful!');
                 window.location.href = 'index.html'; // Remplacez 'welcome.html' par la page souhaitée
