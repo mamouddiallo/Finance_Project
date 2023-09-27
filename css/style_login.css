@@ -1,5 +1,6 @@
 body{
     background-color: #071952;
+    margin: auto;
 }
 
 /* Applique la couleur de fond au formulaire */
@@ -9,9 +10,9 @@ body{
     padding: 20px;
     border-radius: 10px;
     width: 50%; /* Ajuster la largeur du formulaire selon vos préférences */
-    margin: 0 auto; /* Centrer le formulaire horizontalement */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Ajouter une ombre légère */
-    margin: auto;
+    margin-top: 10%;
+    margin-left: 23%;
 }
 
 /* Style pour les étiquettes et les champs de saisie */
@@ -27,7 +28,7 @@ label {
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-    width: 100%;
+    width: 96%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;

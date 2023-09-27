@@ -40,6 +40,9 @@ document.addEventListener('DOMContentLoaded', function() {
             const formDataJSON = JSON.stringify(data);
             localStorage.setItem("users",formDataJSON );
         }else{
+            let converse = JSON.parse(globalData)
+            let isuser = converse.find(element=>element.email == formData.email)? true:false
+            if(isuser) return alert('ce compte est deja utiliser')
             data = JSON.parse(globalData);
             long = data.length < 9?"users0"+(data.length+1): "users"+(data.length+1)
             formData.id  = long
@@ -47,7 +50,6 @@ document.addEventListener('DOMContentLoaded', function() {
             data.push(formData);
             console.log(data)
             localStorage.setItem("users",JSON.stringify(data));
-
 
         }
 

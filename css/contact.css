@@ -1,0 +1,89 @@
+body{
+    background-color: #071952;
+}
+.texte{
+    color: white;
+    text-align: center;
+}
+.grande{
+    width: 80%;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.form{
+    width: 50%;
+    height: 400px;
+    background-color: #088395;
+    margin: auto;
+}
+.icone_text{
+    width: 50%;
+    height: 400px;
+    margin: auto;
+}
+.parent{
+    width: 50%;
+    height: 200px;
+    /* background-color: blue; */
+    margin: auto;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.infos1{
+    width: 8%;
+    height: 200px;
+    margin-left: 0px;
+    margin-top: 20px;
+}
+.text{
+    width: 70%;
+    height: 200px;
+    justify-content: center;
+    color: white;
+  
+
+}
+.texte1{
+    width: 100%;
+    height: 50px;  
+}
+.texte2{
+    width: 100%;
+    height: 50px;
+}
+.texte3{
+    width: 100%;
+    height: 50px;
+}
+.formulaire{
+    width: 50%;
+    margin-left: 150px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#name, #email{
+    height: 30px;
+    width: 70%;
+}
+#subject{
+    height: 50px;
+    width: 70%;
+}
+#message{
+    width: 70%;
+}
+#submit{
+    width: 50%;
+    height: 30px;
+    margin-left: 25px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+}

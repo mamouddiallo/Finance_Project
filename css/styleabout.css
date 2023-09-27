@@ -22,7 +22,7 @@ h1{
 .picture{
     width: 80%;
     height: 500px;
-    background: url("./image/krakenimages-376KN_ISplE-unsplash.jpg") 50% no-repeat;
+    background: url("../image/krakenimages-376KN_ISplE-unsplash.jpg") 50% no-repeat;
     background-size: cover;
     margin: auto;
 }
@@ -135,7 +135,7 @@ h1{
 .picture{
   width: 80%;
   height: 500px;
-  background: url("./image/krakenimages-376KN_ISplE-unsplash.jpg") 50% no-repeat;
+  background: url("../image/krakenimages-376KN_ISplE-unsplash.jpg") 50% no-repeat;
   background-size: cover;
   margin: auto;
 }

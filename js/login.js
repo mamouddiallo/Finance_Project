@@ -1,37 +1,38 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Sélectionnez le formulaire de connexion
+    // Sélectionne le formulaire de connexion
     const loginForm = document.getElementById('login-form');
 
-    // Écoutez l'événement de soumission du formulaire de connexion
+    // Écoute l'événement de soumission du formulaire de connexion
     loginForm.addEventListener('submit', function(event) {
         event.preventDefault(); // Empêche l'envoi du formulaire par défaut
 
-        // Récupérez les valeurs des champs du formulaire de connexion
+        // Récupére les valeurs des champs du formulaire de connexion
         const loginEmail = document.getElementById('email').value;
         const loginPassword = document.getElementById('password').value;
 
-        // Vérifiez d'abord si le formulaire de connexion est vide
+        // Vérifie d'abord si le formulaire de connexion est vide
         if (!loginEmail || !loginPassword) {
-            // Affichez un message d'erreur si le formulaire est vide
+            // Affiche un message d'erreur si le formulaire est vide
             alert('Please fill in all fields.');
             return; // Sortez de la fonction pour éviter la vérification des données d'inscription
         }
 
-        // Récupérez les données d'inscription stockées dans le Local Storage
+        // Récupére les données d'inscription stockées dans le Local Storage
         const storedFormDataJSON = localStorage.getItem('users');
 
         if (storedFormDataJSON) {
-            // Convertissez les données JSON stockées en un objet JavaScript
+            // Convertis les données JSON stockées en un objet JavaScript
             const storedFormData = JSON.parse(storedFormDataJSON);
             let isUser=storedFormData.find(users=>users.email === loginEmail && users.password === loginPassword)
             console.log(isUser)
-            // Vérifiez si l'e-mail et le mot de passe correspondent aux données d'inscription
+            // Vérifie si l'e-mail et le mot de passe correspondent aux données d'inscription
             if (isUser) {
                 // Authentification réussie, vous pouvez rediriger l'utilisateur vers la page d'accueil ou une autre page sécurisée
                 alert('Login successful!');
-                window.location.href = 'index.html'; // Remplacez 'welcome.html' par la page souhaitée
+                localStorage.setItem("session",JSON.stringify(isUser))
+                window.location.href = 'userconnect.html'; // Remplacez 'welcome.html' par la page souhaitée
             } else {
-                // Affichez un message d'erreur en cas d'authentification échouée
+                // Affiche un message d'erreur en cas d'authentification échouée
                 alert('Login failed. Please check your email and password.');
             }
         } else {

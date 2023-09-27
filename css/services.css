@@ -1,0 +1,12 @@
+body{
+    width: 80%;
+    margin: auto;
+    background-color: #088395;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: justify;
+}
+.services{
+    text-align: center;
+}

@@ -1,0 +1,155 @@
+.body{
+    background-color: #35A29F;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar{
+    width:80%;
+    background-color: #071952;
+    height: 100px;
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-between; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.grand{
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+.logo{
+    width: 30%;
+    padding-left: 100px;
+    margin-top: 10px;
+    height: 100%;
+}
+.profil{
+    width: 80px;
+    height: 80px;
+    /* background-color:white; */
+    border-radius: 80px;
+    padding: 10px;
+}
+.liste{
+    display: none;
+}
+.burger{
+    width: 50px;
+    display: block;
+    height: 30px;
+    background-color:#071952;
+    position: relative;
+    margin-top: 35px;
+    margin-left: 5%;
+}
+.burger input{
+    display: none;
+}
+.burger.responsive{
+    display: flex;
+    flex-direction:column ;
+}
+#myid:checked ~ .responsive{
+   visibility: visible;
+
+}
+.responsive{
+    opacity: 1;
+    visibility: hidden;
+    position: relative;
+    height: 250px;
+    border-radius: 20px;
+    width: 200px;
+    border: 1px solid black;
+    background-color: white;
+    font-weight: 400;
+    font-weight: bold;
+    margin-top: 2%;
+    margin-bottom: 10px;
+
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style-type: none;
+
+}
+ul li a {
+    /* margin-top: 10px; */
+    text-decoration: none;
+    list-style-type: none;
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.user {
+   
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+
+
+}
+
+.picture{
+
+    width: 80%;
+    height: 700px;
+    margin: auto;
+    background-image: url("../image/savetrue.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+}
+button:hover{
+    background-color: #35A29F;
+    color: white;
+}
+a{
+    text-decoration: none;
+    list-style-type: none;
+}
+.user{
+    color: white;
+}
+form{
+    width: 100%;
+    margin-left: 10%;
+}
+label{
+    font-size: x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+form input{
+    width: 200px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.btninscription{
+    background-color: #071952;
+    height: 50px;
+    color: white;
+    margin-left: 30%;
+}
+
+.resultat{
+
+    margin: auto;
+    background-color:#071952 ;
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
