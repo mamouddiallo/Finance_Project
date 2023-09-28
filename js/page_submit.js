@@ -47,8 +47,8 @@ let btninscription = document.querySelector(".btninscription");
       let resultat = document.querySelector('.resultat');
         resultat.innerHTML= `
         <h1>Your bilan finance</h1>
-        <p>Nom: ${user.name}</p>
-        <p>Prénom: ${user.Surname}</p>
+        <p>Name: ${user.name}</p>
+        <p>Surname: ${user.Surname}</p>
         <p>ID Card Number: ${user.card}</p>
         <p>Actif: ${actif}</p>
         <p>Passif: ${passif}</p>
