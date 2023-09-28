@@ -81,9 +81,10 @@ body{
 }
 #submit{
     width: 50%;
-    height: 30px;
+    height: 40px;
     margin-left: 25px;
     border-radius: 10px;
     color: white;
     background-color: black;
+
 }
